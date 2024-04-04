@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 const SectionHome = () => {
   const route = useRouter();
   function onClick() {
-    route.push("/invitation-letter");
+    const plataformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
+    route.push(`${plataformLink}invitation-letter`);
   }
 
   return (
