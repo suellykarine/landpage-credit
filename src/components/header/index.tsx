@@ -46,7 +46,11 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
           <Group spacing={5} className={"navigation"}>
             {items}
           </Group>
-          <Link href={"http://www.localhost:3000/"} id="plataform-access">
+
+          <Link
+            href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
+            id="plataform-access"
+          >
             ACESSAR A PLATAFORMA
           </Link>
         </Container>
