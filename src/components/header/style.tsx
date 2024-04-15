@@ -53,8 +53,14 @@ export const HeaderContainer = styled.div`
       }
     }
   }
+
+  .containerButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+  }
   #plataform-access {
-    width: 218px;
+    width: 190px;
     height: 50px;
     background: var(--secondary-color);
     border-radius: 10px;
@@ -63,13 +69,24 @@ export const HeaderContainer = styled.div`
     align-items: center;
     color: white;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     transition: 0.2s;
     &:hover {
       cursor: pointer;
       filter: brightness(1.05);
       transition: 0.3s;
       transform: scale(1.03);
+    }
+  }
+  @media (max-width: 1300px) {
+    .containerButtons {
+      display: flex;
+      justify-content: space-between;
+      width: 29%;
+    }
+    #plataform-access {
+      width: 49%;
+      font-size: 10px;
     }
   }
 `;
