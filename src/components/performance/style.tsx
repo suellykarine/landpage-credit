@@ -1,25 +1,36 @@
 import styled from "@emotion/styled";
 import { Paper } from "@mantine/core";
 import { DivImage } from "../home/style";
-import { DivMain } from "../home/style";
+
+export const DivMain = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+`;
 
 export const DivImagePerformance = styled(DivImage)`
   img {
     width: 90%;
     height: 90%;
   }
+  @media (max-width: 540px) {
+    display: none;
+  }
 `;
-
 export const Button = styled.button`
   width: 287px;
   height: 50px;
   background: #ec8931;
   box-shadow: 3px 0px 150px #ec8931;
   border-radius: 10px;
-  border: 0;
-  left: 111px;
-  top: 564px;
-
+  border: none;
   span {
     font-style: normal;
     font-weight: 700;
@@ -29,45 +40,67 @@ export const Button = styled.button`
     text-transform: uppercase;
     color: #ffffff;
   }
-
   &:hover {
     cursor: pointer;
     filter: brightness(1.05);
     transition: 0.3s;
     transform: scale(1.03);
   }
-
-  &:active {
-    transform: translateY(4px);
+  @media (max-width: 746px) {
+    display: none;
   }
 `;
 
 export const DivCardsAndTitle = styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+  }
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   color: #ffffff;
   width: 49%;
   height: 80%;
-  margin: 2rem 0 3rem -2rem;
-  @media (max-height: 650px) {
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 100vh;
+  }
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 100vh;
+  }
+  @media (max-width: 592px) {
+    justify-content: space-evenly;
   }
 `;
 export const SectionTitle = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 569px;
-  height: 142px;
   text-align: center;
   h2 {
     font-weight: 700;
     color: #ecf1f0;
     font-size: 36px;
+    margin: 0;
+    padding: 0;
   }
   p {
     color: #ecf1f0;
     font-weight: 700;
     font-size: 54px;
-    margin-top: -3.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 575px) {
+    p {
+      font-size: 34px;
+    }
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -75,18 +108,29 @@ export const SectionCard = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
-  margin-top: 1rem;
   width: 100%;
   height: 400px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 851px;
+  }
+  @media (max-width: 592px) {
+    width: 100%;
+    max-width: 851px;
+    height: auto;
+  }
 `;
 
 export const Card = styled(Paper as any)`
-  width: 274px;
-  height: 150px;
-  margin: 0 2rem 0 0;
-  padding: 20px 30px 30px 28px;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(234px, 50%, 274px);
+  height: clamp(50px, 50%, 150px);
+  column-gap: 10px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 18px;
@@ -95,46 +139,21 @@ export const Card = styled(Paper as any)`
     font-weight: 700;
     font-size: 48px;
     color: #ecf1f0;
-    margin-top: -1rem;
+    text-align: center;
   }
   p {
-    margin-top: -3rem;
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     color: #b6b6b6;
   }
-  :hover {
-    transition: 1s;
-    transition: 0.3s;
-    transform: scale(1.05);
-    padding: 30px 30px 30px 28px;
-    background: rgba(255, 255, 255, 0.05);
-  }
-
-  @media (max-height: 650px) {
-    width: 244px;
-    height: 120px;
+  @media (max-width: 592px) {
+    height: 100px;
     .title {
-      font-size: 40px;
+      font-size: 2rem;
     }
     p {
-      font-size: 13px;
+      font-size: 1rem;
     }
-  }
-
-  @media (max-width: 1260px) {
-    width: 200px;
-    .title {
-      font-size: 38px;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-  @media (min-width: 1900px) {
-    width: 400px;
-  }
-  @media (min-width: 2662px) {
-    width: 475px;
   }
 `;

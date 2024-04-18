@@ -49,7 +49,6 @@ const HowToStartSection = () => {
           </Paper>
         </CardsContainer>
       </MainSectionContent>
-      <Footer />
     </HowToStartContainer>
   );
 };

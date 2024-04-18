@@ -1,4 +1,3 @@
-import { DivMain } from "../home/style";
 import Image from "next/image";
 import {
   Card,
@@ -7,6 +6,7 @@ import {
   SectionTitle,
   DivImagePerformance,
   Button,
+  DivMain,
 } from "./style";
 import { dataCards } from "./dataCards";
 import { useRouter } from "next/navigation";
