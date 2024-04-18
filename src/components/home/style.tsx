@@ -211,14 +211,3 @@ export const ImageHome = styled(Image)`
   @media (max-width: 320px) {
   }
 `;
-
-// @media (max-width: 1200px){}
-// @media (max-width: 991px) {}
-
-// @media (max-width: 767px) {}
-
-// @media (max-width: 575px) {}
-
-// @media (max-width: 479px) {}
-
-// @media (max-width: 320px) {}
