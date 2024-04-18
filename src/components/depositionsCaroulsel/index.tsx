@@ -11,12 +11,9 @@ export function DepositionsCaroulsel() {
     <DepositionSection id="section5">
       <Carousel
         sx={{ maxWidth: "95%" }}
-        plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
-        loop
         withIndicators
-        height={"90vh"}
       >
         <Carousel.Slide id="slide-1">
           <Deposition

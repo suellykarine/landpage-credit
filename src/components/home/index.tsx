@@ -13,16 +13,16 @@ const SectionHome = () => {
   return (
     <DivMain id="section1">
       <DivText>
-        <p>CREDIT CONNECT</p>
-        <h1>
-          A plataforma de mercado secundário de ativos de créditos do Brasil
-        </h1>
-        <span className="subtitle">
-          Faça suas operações pelo Credit Connect
-        </span>
+        <div>
+          <h1>
+            A plataforma de mercado secundário de ativos de créditos do Brasil
+          </h1>
+          <span className="subtitle">
+            Faça suas operações pelo Credit Connect
+          </span>
+        </div>
         <InviteButton text="SOLICITE SUA CARTA CONVITE" onClick={onClick} />
       </DivText>
-      <DivBackground />
       <DivImage>
         <Image
           src="/imageHome.svg"

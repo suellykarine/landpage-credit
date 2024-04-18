@@ -16,17 +16,14 @@ export const DivMain = styled.div`
 `;
 
 export const DivTitle = styled.div`
-  margin: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const H2 = styled.h2`
-  width: 778.01px;
-  height: 104px;
-  margin-top: 24px;
-
+  width: clamp(0px, 100%, 778.01px);
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -39,10 +36,16 @@ export const H2 = styled.h2`
     font-size: 55px;
     width: 1000px;
   }
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 479px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const H3 = styled.h3`
-  width: 842px;
+  width: clamp(0px, 100%, 842px);
   height: 37px;
   margin-top: -18px;
 
@@ -59,6 +62,12 @@ export const H3 = styled.h3`
     font-size: 33px;
     margin-top: 11px;
     width: 900px;
+  }
+  @media (max-width: 767px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 575px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -106,8 +115,6 @@ export const StyledCard = createPolymorphicComponent<"div", CardProps>(styled(
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-weight: 400;
-  margin-top: -69px;
-  margin-right: 10px;
 
   &:hover {
     transition: 0.7s;
@@ -118,7 +125,7 @@ export const StyledCard = createPolymorphicComponent<"div", CardProps>(styled(
     }
   }
 
-  @media (max-width: 1060px) {
+  @media (max-width: 1200px) {
     width: 224px;
     height: 398px;
     div {

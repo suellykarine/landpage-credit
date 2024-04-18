@@ -3,10 +3,20 @@ import styled from "styled-components";
 export const DepositionSection = styled.section`
   margin: 0 auto;
   width: 100%;
-  border-radius: 16px;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 
+  .mantine-Carousel-slide {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+  }
   .mantine-Carousel-controls button {
     display: none;
   }
@@ -33,4 +43,7 @@ export const DepositionSection = styled.section`
       background-color: var(--white);
     }
   }
+  /* @media (max-width: 991px) {
+    display: none;
+  } */
 `;
