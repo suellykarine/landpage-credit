@@ -20,7 +20,7 @@ export const DivImagePerformance = styled(DivImage)`
     width: 90%;
     height: 90%;
   }
-  @media (max-width: 540px) {
+  @media (max-width: 770px) {
     display: none;
   }
 `;
