@@ -19,6 +19,6 @@ Este projeto utiliza `pnpm` como gerenciador de pacotes. Abaixo estão os comand
 
 
 
-Outros comandos úteis incluem:
+Outros comandos:
 
 - `next dev`: Roda o servidor de desenvolvimento.
