@@ -11,8 +11,6 @@ Este projeto utiliza `pnpm` como gerenciador de pacotes. Abaixo estão os comand
 
 ## Dependências
 
-O projeto utiliza as seguintes bibliotecas principais, entre outras:
-
 - `next`: 13.4.4
 - `node`: 18.17.0
 - `react`: 18.2.0
