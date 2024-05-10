@@ -1,4 +1,5 @@
-import Cards from "./cards";
+import { CarouselCards } from "../cardsCarousel";
+import Card from "./card";
 import { H3, DivTitle, H2, DivMain } from "./style";
 const SectionProfileInvestor = () => {
   return (
@@ -9,7 +10,7 @@ const SectionProfileInvestor = () => {
         </H2>
         <H3>A CreditConnect tem soluções para cada perfil.</H3>
       </DivTitle>
-      <Cards />
+      <CarouselCards />
     </DivMain>
   );
 };

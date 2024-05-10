@@ -4,7 +4,7 @@ interface IProfile {
   description: string;
 }
 
-const Profiles: IProfile[] = [
+export const profiles: IProfile[] = [
   {
     photo: "./pf.svg",
     type: "Investidor Pessoa Física",
@@ -30,5 +30,3 @@ const Profiles: IProfile[] = [
       "Investidores que apresentam uma elevada quantia em investimentos e que detêm conhecimentos adequados sobre investimentos financeiros e os riscos envolvidos.",
   },
 ];
-
-export default Profiles;

@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Paper, Text } from "@mantine/core";
-
+export const ContainerFooter = styled.div`
+  height: 100%;
+  width: clamp(0px, 95vw, 1500px);
+  margin: 0 auto;
+  padding: 0;
+`;
 export const FooterWrapper = styled(Paper)`
   padding: 24px;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
@@ -9,24 +14,17 @@ export const FooterWrapper = styled(Paper)`
   background: linear-gradient(180deg, rgba(27, 63, 126, 0) 0%, #1b3f7e 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: #ecf1f0;
-  position: absolute;
-  bottom: 0px;
   padding-left: 0px;
   .grid {
-    margin-right: 28px;
-    margin-left: 30px;
+    width: 100%;
     color: var(--grey);
+    justify-content: space-between;
   }
   .column-name {
     margin-bottom: 20px;
   }
-
-  @media (min-width: 1200px) {
-    .grid {
-      margin-right: 78px;
-      margin-left: 90px;
-      justify-content: space-between;
-    }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -39,9 +37,7 @@ export const LogoWrapper = styled.div`
   }
 `;
 
-export const LogoImage = styled.img`
-  margin-right: 12px;
-`;
+export const LogoImage = styled.img``;
 
 export const SocialLinksWrapper = styled.div`
   margin-top: 16px;

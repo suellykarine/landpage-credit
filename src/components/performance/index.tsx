@@ -1,4 +1,3 @@
-import { DivMain } from "../home/style";
 import Image from "next/image";
 import {
   Card,
@@ -7,6 +6,7 @@ import {
   SectionTitle,
   DivImagePerformance,
   Button,
+  DivMain,
 } from "./style";
 import { dataCards } from "./dataCards";
 import { useRouter } from "next/navigation";
@@ -43,7 +43,10 @@ const SectionPerformance = () => {
           })}
         </SectionCard>
         <Button
-          onClick={() => router.push("/invitation-letter")}
+          onClick={() => {
+            const plataformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
+            router.push(`${plataformLink}invitation-letter`);
+          }}
           id="buttonPerformance"
         >
           <span>SOLICITE SUA CARTA CONVITE</span>

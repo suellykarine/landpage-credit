@@ -29,6 +29,8 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     </ScrollLink>
   ));
 
+  const platformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
+
   return (
     <HeaderContainer id="container-header">
       <Header height={90} className={"header"} classNames={"Header"}>
@@ -46,9 +48,21 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
           <Group spacing={5} className={"navigation"}>
             {items}
           </Group>
-          <Link href={"http://www.localhost:3000/"} id="plataform-access">
-            ACESSAR A PLATAFORMA
-          </Link>
+
+          <div className="containerButtons">
+            <Link
+              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}/invitation-letter`}
+              id="plataform-access"
+            >
+              SOLICITAR CARTA CONVITE
+            </Link>
+            <Link
+              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
+              id="plataform-access"
+            >
+              ACESSAR A PLATAFORMA
+            </Link>
+          </div>
         </Container>
       </Header>
     </HeaderContainer>

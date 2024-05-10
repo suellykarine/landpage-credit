@@ -17,7 +17,7 @@ export const SectionDeposition = styled.section`
     margin: 0;
     padding: 0;
     width: 50%;
-    overflow-y: hidden;
+    overflow: hidden;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     img {
