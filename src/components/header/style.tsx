@@ -29,7 +29,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
 
     img {
-      width: 100%;
+      width: 105%;
       height: 100%;
     }
   }
@@ -52,7 +52,7 @@ export const HeaderContainer = styled.div`
   }
   .containerButtons {
     display: flex;
-    margin-left: 15px;
+    margin-right: 7%;
     justify-content: space-between;
     align-items: center;
     width: 30%;
@@ -61,23 +61,24 @@ export const HeaderContainer = styled.div`
   }
 
   #plataform-access {
-    width: 49%;
     width: clamp(100px, 49%, 280px);
-    height: 35px;
-    border-radius: 6px;
+    height: 45px;
+    border-radius: 10px;
     padding: 10px;
     background: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-weight: 700;
-    font-size: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    font-feature-settings: "salt" on, "liga" off;
     transition: 0.2s;
     text-align: center;
-    :nth-last-child(1) {
+    :nth-last-child(2) {
       background-color: transparent;
-      border: 1px solid var(--secondary-color);
+      border: 1px solid #ffffff;
     }
     &:hover {
       cursor: pointer;
@@ -143,7 +144,11 @@ export const HeaderContainer = styled.div`
     }
   }
 
-  @media (max-width: 479px) {
+  @media (max-width: 815px) {
+   
+      #plataform-access {
+      font-size: 11px;
+    }
   }
 
   @media (max-width: 320px) {
@@ -151,7 +156,6 @@ export const HeaderContainer = styled.div`
       margin: 0;
       gap: 4px;
     }
-    #plataform-access {
       height: 40px;
       max-width: 200px;
       border-radius: 8px;

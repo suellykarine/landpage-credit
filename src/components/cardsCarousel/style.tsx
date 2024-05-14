@@ -4,7 +4,7 @@ export const DivCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   @media (max-width: 1200px) {
     justify-content: center;

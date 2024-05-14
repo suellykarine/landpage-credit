@@ -43,7 +43,7 @@ export const SocialLinksWrapper = styled.div`
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
-  max-width: 132px;
+  max-width: 60px;
 `;
 
 export const CopyrightText = styled(Text)`

@@ -20,7 +20,7 @@ const SectionPerformance = () => {
     <DivMain id="section4">
       <DivImagePerformance>
         <Image
-          src="/imagePerformance.svg"
+          src="/imagemPerformance.svg"
           alt="Imagem performance"
           width="100"
           height="100"

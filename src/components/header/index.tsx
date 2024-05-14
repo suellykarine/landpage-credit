@@ -4,31 +4,7 @@ import { Header, Container, Group } from "@mantine/core";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import React, { useState } from "react";
 
-interface HeaderResponsiveProps {
-  links: { link: string; label: string }[];
-}
-
-export function HeaderResponsive({ links }: HeaderResponsiveProps) {
-  const [selectedLink, setSelectedLink] = useState("");
-
-  const handleLinkClick = (link: any) => {
-    setSelectedLink(link);
-  };
-  const items = links.map((link) => (
-    <ScrollLink
-      key={link.label}
-      to={link.link}
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={500}
-      activeClass="selected"
-      onClick={() => handleLinkClick(link.label)}
-    >
-      {link.label}
-    </ScrollLink>
-  ));
-
+export function HeaderResponsive() {
   const platformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
 
   return (
@@ -44,10 +20,6 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
           >
             <img src="/Logo.svg" alt="Logotipo" />
           </ScrollLink>
-
-          <Group spacing={5} className={"navigation"}>
-            {items}
-          </Group>
 
           <div className="containerButtons">
             <Link
