@@ -1,13 +1,18 @@
-import { DivMain, DivText, ImageHome, DivImage, DivBackground } from "./style";
+import { DivMain, DivText, ImageHome, DivImage } from "./style";
 import InviteButton from "../inviteButton";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const SectionHome = () => {
-  const route = useRouter();
-  function onClick() {
-    const plataformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
-    route.push(`${plataformLink}invitation-letter`);
+  function scrollToDiv() {
+    const divTarget = document.getElementById("SectionProfile");
+
+    const topPos = divTarget!.offsetTop;
+
+    window.scrollTo({
+      top: topPos,
+      behavior: "smooth",
+    });
   }
 
   return (
@@ -15,17 +20,18 @@ const SectionHome = () => {
       <DivText>
         <div>
           <h1>
-            A plataforma de mercado secundário de ativos de créditos do Brasil
+            A plataforma para você investir com facilidade em Operações de
+            Crédito
           </h1>
           <span className="subtitle">
-            Faça suas operações pelo Credit Connect
+            A segurança da negociação aprovada pelo time da SRM Asset.
           </span>
         </div>
-        <InviteButton text="SOLICITE SUA CARTA CONVITE" onClick={onClick} />
+        <InviteButton text="SAIBA MAIS" onClick={scrollToDiv} />
       </DivText>
       <DivImage>
         <Image
-          src="/imageHome.svg"
+          src="/homeImage.svg"
           alt="ImagemHome"
           width="100"
           height="100"
