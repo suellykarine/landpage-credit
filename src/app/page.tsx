@@ -20,7 +20,6 @@ const handleClick = () => {
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
-    console.log(`env ${process.env.NEXT_PUBLIC_ENVIROMENT}`);
     function handleScroll() {
       setScrollY(window.scrollY);
       const scrollTo = window.innerHeight / 6;
