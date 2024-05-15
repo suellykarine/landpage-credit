@@ -23,18 +23,19 @@ const HowToStartSection = () => {
           <p>Maneira simples e fácil de começar seu investimento</p>
         </Div>
         <CardsOrTextContainer card={true}>
-          {dataCards.map((data: IDataCardsHowStart) => {
+          {dataCards.map((data: IDataCardsHowStart, index: number) => {
             if (data.isArrow) {
               return (
                 <img
                   src={data.src}
                   alt={data.alt}
                   className={data.isArrowUp ? "arrow arrowUp" : "arrow"}
+                  key={index}
                 />
               );
             } else {
               return (
-                <Paper shadow="xs" className="card">
+                <Paper shadow="xs" className="card" key={index}>
                   <Image
                     src={data.src}
                     alt={data.alt}
@@ -47,9 +48,9 @@ const HowToStartSection = () => {
           })}
         </CardsOrTextContainer>
         <CardsOrTextContainer>
-          {dataTexts.map((data: IDataTextsHowStart) => {
+          {dataTexts.map((data: IDataTextsHowStart, index: number) => {
             return (
-              <div className="text">
+              <div className="text" key={index}>
                 <h3>{data.title}</h3>
                 <p>{data.description}</p>
               </div>
