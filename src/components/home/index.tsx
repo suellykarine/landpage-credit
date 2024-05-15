@@ -5,12 +5,12 @@ import { useRouter } from "next/navigation";
 
 const SectionHome = () => {
   function scrollToDiv() {
-    const divTarget = document.getElementById("SectionProfile");
+    const divTarget = document.getElementById("section3");
 
     const topPos = divTarget!.offsetTop;
 
     window.scrollTo({
-      top: topPos,
+      top: topPos + 50,
       behavior: "smooth",
     });
   }
