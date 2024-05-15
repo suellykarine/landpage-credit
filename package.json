@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:homolog": "dotenv -e .env.staging -- next build",
+    "build:production": "dotenv -e .env.production -- next build",
     "start:homolog": "dotenv -e .env.staging -- next start",
     "start:production": "dotenv -e .env.production -- next start",
     "lint": "next lint",
