@@ -1,15 +1,8 @@
-import {
-  Container,
-  Img,
-  StyledCard,
-  TextDescription,
-  TextTitle,
-} from "./style";
+import { Container, Img, StyledCard, TextTitle } from "./style";
 
 interface IProfile {
   photo: string;
   type: string;
-  description: string;
 }
 
 interface ICardProps {
@@ -19,17 +12,9 @@ interface ICardProps {
 const Card = ({ profile }: ICardProps) => {
   return (
     <StyledCard>
-      <Img
-        src={profile.photo}
-        alt="Nome do Investidor"
-        width="10"
-        height="10"
-      />
-      <div>
+      <Img src={profile.photo} alt="Nome do Investidor" width="5" height="5" />
+      <div className="typeInvestor">
         <TextTitle>{profile.type}</TextTitle>
-      </div>
-      <div>
-        <TextDescription>{profile.description}</TextDescription>
       </div>
     </StyledCard>
   );

@@ -4,7 +4,7 @@ import { DivImage } from "../home/style";
 
 export const DivMain = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,8 +17,8 @@ export const DivMain = styled.div`
 
 export const DivImagePerformance = styled(DivImage)`
   img {
-    width: 90%;
-    height: 90%;
+    width: 88%;
+    height: 88%;
   }
   @media (max-width: 770px) {
     display: none;
@@ -56,6 +56,7 @@ export const DivCardsAndTitle = styled.div`
     margin: 0;
     padding: 0;
   }
+  margin-right: 7%;
   display: flex;
   flex-direction: column;
   align-items: center;

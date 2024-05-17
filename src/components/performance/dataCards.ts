@@ -1,18 +1,18 @@
 export const dataCards = [
   {
-    title: "+R$7bi",
-    description: "de negócios originados para nossos clientes",
+    title: "+ 2500",
+    description: "CLIENTES",
   },
   {
-    title: "+4200",
-    description: "negócios submetidos via plataforma desde 2019",
+    title: "+ 6 Bi",
+    description: "OPERADOS ANUALMENTE",
   },
   {
-    title: "+800",
-    description: "parceiros distribuídos em todo país",
+    title: "+ 18",
+    description: "FILIAIS",
   },
   {
-    title: "33000",
-    description: "usuários cadastrados",
+    title: "+ 100",
+    description: "VENDEDORES",
   },
 ];

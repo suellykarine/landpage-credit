@@ -22,6 +22,7 @@ export const InvestmentCoverageDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  margin-left: 5%;
   padding: 0;
 
   button {
@@ -29,12 +30,24 @@ export const InvestmentCoverageDiv = styled.div`
     position: static;
   }
   p {
-    width: 90%;
+    width: 80%;
     margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    color: #ffffff;
   }
   h2 {
     margin: 0;
     font-size: 32px;
+  }
+  @media (max-width: 1190px) {
+    p {
+      width: 90%;
+      font-size: 22px;
+    }
   }
   @media (max-width: 991px) {
     gap: 15px;
@@ -54,6 +67,7 @@ export const ImageDiv = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
+  margin-right: 8%;
   overflow: hidden;
   border-radius: 17px;
   width: 50%;
@@ -62,10 +76,17 @@ export const ImageDiv = styled.div`
   img {
     width: 100%;
     height: 100%;
-    min-width: 647px;
-    min-height: 684px;
   }
-  @media (max-width: 767px) {
+
+  @media (max-width: 768px) {
     display: none;
+  }
+  @media (max-width: 1190px) {
+    height: 80%;
+    width: 70%;
+    img {
+      width: 100%;
+      height: 150%;
+    }
   }
 `;

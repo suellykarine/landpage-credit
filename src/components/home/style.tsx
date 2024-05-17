@@ -2,13 +2,12 @@ import styled from "@emotion/styled";
 import { Image } from "@mantine/core";
 
 export const DivMain = styled.section`
-  display: flex;
-  height: 100vh;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px auto;
+  height: 99vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
 
   @media (max-width: 1200px) {
   }
@@ -43,6 +42,7 @@ export const DivText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 8% 0 0 5%;
 
   button {
     margin-top: 25px;
@@ -111,51 +111,19 @@ export const DivText = styled.div`
   }
 `;
 
-export const DivBackground = styled.div`
-  position: absolute;
-
-  background: radial-gradient(
-    50.19% 50.11% at 47.13% 50.05%,
-    #fa45c1 0%,
-    #cb389d 21%,
-    #571843 67%,
-    #000000 100%
-  );
-  background-blend-mode: color-dodge;
-  mix-blend-mode: color-dodge;
-  opacity: 0.5;
-  @media (max-width: 1100px) {
-    display: none;
-  }
-  @media (max-width: 1200px) {
-  }
-  @media (max-width: 991px) {
-  }
-
-  @media (max-width: 767px) {
-  }
-
-  @media (max-width: 575px) {
-  }
-
-  @media (max-width: 479px) {
-  }
-
-  @media (max-width: 320px) {
-  }
-`;
-
 export const DivImage = styled.div`
-  width: clamp(700px, 50%, 700px);
-  height: clamp(400px, 50%, 1800px);
-  border-radius: 50%;
+  width: clamp(700px, 80%, 700px);
+  height: clamp(400px, 80%, 1800px);
+
+  margin-right: 5%;
   background: radial-gradient(
-    50.19% 50.11% at 47.13% 50.05%,
-    #fa45c1 0%,
-    #cb389d 21%,
-    transparent 67%,
+    60.11% 60.19% at 37.13% 40.05%,
+    rgba(69, 120, 250, 0.9) 0%,
+    rgba(56, 80, 203, 0.2) 40%,
+    rgba(24, 34, 87, 0.008) 70%,
     transparent 100%
   );
+
   img {
     width: 90%;
     height: 90%;

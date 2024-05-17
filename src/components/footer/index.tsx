@@ -21,7 +21,7 @@ export const Footer = () => {
                 <LogoImage src="/logo1.png" alt="Logo" />
               </LogoWrapper>
               <SocialLinksWrapper>
-                <Link href="https://www.instagram.com/" id="instagram">
+                <Link href="www.instagram.com/srmasset/" id="instagram">
                   <img
                     src="/instagram.png"
                     alt="Instagram"
@@ -29,26 +29,10 @@ export const Footer = () => {
                     height={24}
                   />
                 </Link>
-                <Link href="https://twitter.com/" id="twitter">
-                  <img
-                    src="/twitter.png"
-                    alt="Twitter"
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-                <Link href="https://www.facebook.com/" id="facebook">
+                <Link href="https://www.facebook.com/SRMASSET" id="facebook">
                   <img
                     src="/facebook.png"
                     alt="Facebook"
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-                <Link href="https://www.youtube.com/" id="youtube">
-                  <img
-                    src="/youtube.png"
-                    alt="Youtube"
                     width={24}
                     height={24}
                   />
@@ -110,8 +94,8 @@ export const Footer = () => {
                 >
                   Contatos
                 </Text>
-                <p>+55 (11) 2345-6789</p>
-                <p>contato@creditconnect.com</p>
+                <p>+55 11 9.9153-6872</p>
+                <p>srm@srmasset.com</p>
                 <p>Alameda Cleveland, 509</p>
                 <p>CEP: 01218-000 - São Paulo/SP</p>
               </Column>

@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     --bg-form:   #1c2158;
 }
  body {
-    background-color: #1c1f4e;
+    background: linear-gradient(180deg, #1C1F4E 80.2%, #1B3A77 100%);
     font-family: ${roboto.style.fontFamily};
     overflow-x: hidden;
     cursor: default;
