@@ -2,6 +2,16 @@
 
 <!--- next entry here -->
 
+## 0.1.2
+2024-05-27
+
+### Fixes
+
+- fix/prodProfile (0b812af5ce23699e6f4c80a314e3e9d91db42a6b)
+- fix/prodProfile (35273df5877b1d77187b2017751e59d8c79babb5)
+- Merge branch 'fix/prodProfile' into 'homolog' (4e8a2d10389f4a88da825c19db424568f5a1fe6e)
+- Merge branch 'homolog' (8ac04da54806d423533d9a7dec6a3e985e38ed4e)
+
 ## 0.1.1
 2024-05-17
 
