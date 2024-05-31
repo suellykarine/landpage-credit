@@ -2,6 +2,16 @@
 
 <!--- next entry here -->
 
+## 0.1.4
+2024-05-31
+
+### Fixes
+
+- fix/basePath (0e10f947f9c243fc823a555bd66a9fbf2af2588a)
+- version (da049d105865a442080b1aaf5a99c75827f8ffd4)
+- Merge branch 'fix/basePath' into 'homolog' (48fc5f6748e5d83d27ac0b4e916179f5f49ba2ae)
+- Merge branch 'homolog' into 'master' (244cf47887e593a9303e71e5c8d69f1a5b372baf)
+
 ## 0.1.2
 2024-05-27
 
