@@ -2,6 +2,15 @@
 
 <!--- next entry here -->
 
+## 0.1.6
+2024-06-03
+
+### Fixes
+
+- fix/targetBlank (5c0053212811561afe4b5478a106215700a5caff)
+- fix/href (14065054219e97c600381b5e7534455064a28224)
+- Merge branch 'test/buttons' into 'master' (cedf8dbf9ed644edabe0934f189ca7024fac69a8)
+
 ## 0.1.5
 2024-06-03
 
