@@ -1,14 +1,9 @@
-import Link from "next/link";
 import { HeaderContainer } from "./style";
-import { Header, Container, Group } from "@mantine/core";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { Header, Container } from "@mantine/core";
+import { Link as ScrollLink } from "react-scroll";
+import React from "react";
 
 export function HeaderResponsive() {
-  const platformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
-  const router = useRouter();
-
   return (
     <HeaderContainer id="container-header">
       <Header height={90} className={"header"} classNames={"Header"}>
@@ -25,38 +20,22 @@ export function HeaderResponsive() {
 
           <div className="containerButtons">
             <button
+              id="plataform-access"
               onClick={() => {
                 window.location.href = `${process.env
                   .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
-                // router.push(
-                //   `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
-                // );
               }}
             >
               SOLICITAR CARTA CONVITE
             </button>
             <button
+              id="plataform-access"
               onClick={() => {
                 window.location.href = process.env.NEXT_PUBLIC_PLATAFORM_LINK!;
               }}
             >
               ACESSAR PLATAFORMA
             </button>
-
-            {/* <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}invitation-letter`}
-              id="plataform-access"
-              target="blank"
-            >
-              SOLICITAR CARTA CONVITE
-            </Link>
-            <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
-              id="plataform-access"
-              target="blank"
-            >
-              ACESSAR A PLATAFORMA
-            </Link> */}
           </div>
         </Container>
       </Header>
