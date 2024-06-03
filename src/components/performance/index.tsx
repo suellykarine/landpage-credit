@@ -44,8 +44,8 @@ const SectionPerformance = () => {
         </SectionCard>
         <Button
           onClick={() => {
-            const plataformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
-            router.push(`${plataformLink}invitation-letter`);
+            window.location.href = `${process.env
+              .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
           }}
           id="buttonPerformance"
         >

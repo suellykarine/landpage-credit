@@ -1,12 +1,9 @@
-import Link from "next/link";
 import { HeaderContainer } from "./style";
-import { Header, Container, Group } from "@mantine/core";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import React, { useState } from "react";
+import { Header, Container } from "@mantine/core";
+import { Link as ScrollLink } from "react-scroll";
+import React from "react";
 
 export function HeaderResponsive() {
-  const platformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
-
   return (
     <HeaderContainer id="container-header">
       <Header height={90} className={"header"} classNames={"Header"}>
@@ -22,18 +19,23 @@ export function HeaderResponsive() {
           </ScrollLink>
 
           <div className="containerButtons">
-            <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}/invitation-letter`}
+            <button
               id="plataform-access"
+              onClick={() => {
+                window.location.href = `${process.env
+                  .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
+              }}
             >
               SOLICITAR CARTA CONVITE
-            </Link>
-            <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
+            </button>
+            <button
               id="plataform-access"
+              onClick={() => {
+                window.location.href = process.env.NEXT_PUBLIC_PLATAFORM_LINK!;
+              }}
             >
-              ACESSAR A PLATAFORMA
-            </Link>
+              ACESSAR PLATAFORMA
+            </button>
           </div>
         </Container>
       </Header>

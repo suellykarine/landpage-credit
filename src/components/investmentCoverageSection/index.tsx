@@ -34,8 +34,8 @@ const InvestmentCoverageSection = () => {
         <InviteButton
           text="SOLICITE SUA CARTA CONVITE"
           onClick={() => {
-            const plataformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
-            router.push(`${plataformLink}invitation-letter`);
+            window.location.href = `${process.env
+              .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
           }}
         />
       </InvestmentCoverageDiv>
