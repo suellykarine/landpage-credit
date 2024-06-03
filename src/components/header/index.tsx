@@ -24,24 +24,26 @@ export function HeaderResponsive() {
           </ScrollLink>
 
           <div className="containerButtons">
-            {/* <button
+            <button
               onClick={() => {
-                router.push(
-                  `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
-                );
+                window.location.href = `${process.env
+                  .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
+                // router.push(
+                //   `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
+                // );
               }}
             >
               SOLICITAR CARTA CONVITE
             </button>
             <button
               onClick={() => {
-                router.push(process.env.NEXT_PUBLIC_PLATAFORM_LINK!);
+                window.location.href = process.env.NEXT_PUBLIC_PLATAFORM_LINK!;
               }}
             >
               ACESSAR PLATAFORMA
-            </button> */}
+            </button>
 
-            <Link
+            {/* <Link
               href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}invitation-letter`}
               id="plataform-access"
               target="blank"
@@ -54,7 +56,7 @@ export function HeaderResponsive() {
               target="blank"
             >
               ACESSAR A PLATAFORMA
-            </Link>
+            </Link> */}
           </div>
         </Container>
       </Header>
