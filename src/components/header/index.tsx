@@ -24,7 +24,7 @@ export function HeaderResponsive() {
           </ScrollLink>
 
           <div className="containerButtons">
-            <button
+            {/* <button
               onClick={() => {
                 router.push(
                   `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
@@ -39,20 +39,22 @@ export function HeaderResponsive() {
               }}
             >
               ACESSAR PLATAFORMA
-            </button>
+            </button> */}
 
-            {/* <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}/invitation-letter`}
+            <Link
+              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}invitation-letter`}
               id="plataform-access"
+              target="blank"
             >
               SOLICITAR CARTA CONVITE
             </Link>
             <Link
               href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
               id="plataform-access"
+              target="blank"
             >
               ACESSAR A PLATAFORMA
-            </Link> */}
+            </Link>
           </div>
         </Container>
       </Header>
