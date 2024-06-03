@@ -26,30 +26,34 @@ export function HeaderResponsive() {
           <div className="containerButtons">
             <button
               onClick={() => {
-                router.push(
-                  `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
-                );
+                window.location.href = `${process.env
+                  .NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`;
+                // router.push(
+                //   `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
+                // );
               }}
             >
               SOLICITAR CARTA CONVITE
             </button>
             <button
               onClick={() => {
-                router.push(process.env.NEXT_PUBLIC_PLATAFORM_LINK!);
+                window.location.href = process.env.NEXT_PUBLIC_PLATAFORM_LINK!;
               }}
             >
               ACESSAR PLATAFORMA
             </button>
 
             {/* <Link
-              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}/invitation-letter`}
+              href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}invitation-letter`}
               id="plataform-access"
+              target="blank"
             >
               SOLICITAR CARTA CONVITE
             </Link>
             <Link
               href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}`}
               id="plataform-access"
+              target="blank"
             >
               ACESSAR A PLATAFORMA
             </Link> */}
