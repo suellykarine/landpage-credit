@@ -3,9 +3,11 @@ import { HeaderContainer } from "./style";
 import { Header, Container, Group } from "@mantine/core";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export function HeaderResponsive() {
   const platformLink = process.env.NEXT_PUBLIC_PLATAFORM_LINK;
+  const router = useRouter();
 
   return (
     <HeaderContainer id="container-header">
@@ -22,7 +24,24 @@ export function HeaderResponsive() {
           </ScrollLink>
 
           <div className="containerButtons">
-            <Link
+            <button
+              onClick={() => {
+                router.push(
+                  `${process.env.NEXT_PUBLIC_PLATAFORM_LINK!}invitation-letter`
+                );
+              }}
+            >
+              SOLICITAR CARTA CONVITE
+            </button>
+            <button
+              onClick={() => {
+                router.push(process.env.NEXT_PUBLIC_PLATAFORM_LINK!);
+              }}
+            >
+              ACESSAR PLATAFORMA
+            </button>
+
+            {/* <Link
               href={`${process.env.NEXT_PUBLIC_PLATAFORM_LINK}/invitation-letter`}
               id="plataform-access"
             >
@@ -33,7 +52,7 @@ export function HeaderResponsive() {
               id="plataform-access"
             >
               ACESSAR A PLATAFORMA
-            </Link>
+            </Link> */}
           </div>
         </Container>
       </Header>
