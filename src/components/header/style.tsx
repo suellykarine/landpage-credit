@@ -145,8 +145,7 @@ export const HeaderContainer = styled.div`
   }
 
   @media (max-width: 815px) {
-   
-      #plataform-access {
+    #plataform-access {
       font-size: 11px;
     }
   }
@@ -156,14 +155,13 @@ export const HeaderContainer = styled.div`
       margin: 0;
       gap: 4px;
     }
-      height: 40px;
-      max-width: 200px;
-      border-radius: 8px;
-      font-weight: 400;
-      margin: 0;
-      gap: 0;
-      font-size: 8px;
-    }
+    height: 40px;
+    max-width: 200px;
+    border-radius: 8px;
+    font-weight: 400;
+    margin: 0;
+    gap: 0;
+    font-size: 8px;
   }
   @media (max-width: 200px) {
     position: static;
