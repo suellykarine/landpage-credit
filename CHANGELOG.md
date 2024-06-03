@@ -2,6 +2,14 @@
 
 <!--- next entry here -->
 
+## 0.1.5
+2024-06-03
+
+### Fixes
+
+- test/buttons (a197b2fef74b998e10f3f1a14a34447e510d49b0)
+- Merge branch 'test/buttons' into 'master' (b2a269a884745d42526ef95a58af2a617a16671f)
+
 ## 0.1.4
 2024-05-31
 
