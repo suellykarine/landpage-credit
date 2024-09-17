@@ -23,7 +23,7 @@ export const Footer = () => {
               <SocialLinksWrapper>
                 <Link href="www.instagram.com/srmasset/" id="instagram">
                   <img
-                    src="/instagram.png"
+                    src="/instagram.svg"
                     alt="Instagram"
                     width={24}
                     height={24}
@@ -31,8 +31,16 @@ export const Footer = () => {
                 </Link>
                 <Link href="https://www.facebook.com/SRMASSET" id="facebook">
                   <img
-                    src="/facebook.png"
+                    src="/facebook.svg"
                     alt="Facebook"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+                <Link href="https://www.youtube.com" id="youtube">
+                  <img
+                    src="/youtube.svg"
+                    alt="youtube"
                     width={24}
                     height={24}
                   />

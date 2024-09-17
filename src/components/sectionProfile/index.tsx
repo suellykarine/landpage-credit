@@ -1,5 +1,4 @@
 import { CarouselCards } from "../cardsCarousel";
-import Card from "./card";
 import { H3, DivTitle, H2, DivMain } from "./style";
 const SectionProfileInvestor = () => {
   return (

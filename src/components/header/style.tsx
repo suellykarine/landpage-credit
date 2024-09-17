@@ -69,7 +69,7 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white);
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
@@ -78,7 +78,7 @@ export const HeaderContainer = styled.div`
     text-align: center;
     :nth-last-child(2) {
       background-color: transparent;
-      border: 1px solid #ffffff;
+      border: 1px solid var(--white);
     }
     &:hover {
       cursor: pointer;

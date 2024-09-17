@@ -2,7 +2,6 @@ import {
   Button,
   ButtonProps,
   Header,
-  HeaderProps,
   createPolymorphicComponent,
 } from "@mantine/core";
 import styled from "@emotion/styled";

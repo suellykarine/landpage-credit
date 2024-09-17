@@ -68,7 +68,7 @@ export const CardsOrTextContainer = styled.div<ICustomDiv>`
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 18px;
 
-    color: var(--grey);
+    color: var(--gray);
   }
   .text {
     width: 300px;
@@ -101,7 +101,7 @@ export const CardsOrTextContainer = styled.div<ICustomDiv>`
     .text {
       margin-top: 5%;
       h3 {
-        color: #f18820;
+        color: var(--new-orange);
       }
     }
   }
@@ -123,7 +123,7 @@ export const Div = styled.div`
   }
   p {
     margin: 0px;
-    color: var(--grey);
+    color: var(--gray);
     margin-bottom: 20px;
   }
   @media (max-width: 746px) {

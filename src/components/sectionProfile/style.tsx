@@ -30,7 +30,7 @@ export const H2 = styled.h2`
   line-height: 52px;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--white);
 
   @media (min-width: 2560px) {
     font-size: 55px;
@@ -56,7 +56,7 @@ export const H3 = styled.h3`
 
   text-align: center;
 
-  color: #ffffff;
+  color: var(--white);
 
   @media (min-width: 2560px) {
     font-size: 33px;
@@ -129,7 +129,7 @@ export const StyledCard = createPolymorphicComponent<"div", CardProps>(styled(
   &:hover {
     transition: 0.7s;
     transform: scale(1.04);
-    background-color: #ec8931;
+    background-color: var(--secondary-color);
   }
 `);
 
@@ -149,7 +149,7 @@ export const TextTitle = createPolymorphicComponent<"h2", TextProps>(styled(
 
   text-align: center;
 
-  color: #ffffff;
+  color: var(--white);
 
   @media (min-width: 1600px) {
     font-size: 26px;

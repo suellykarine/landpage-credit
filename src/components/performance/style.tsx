@@ -27,8 +27,8 @@ export const DivImagePerformance = styled(DivImage)`
 export const Button = styled.button`
   width: 287px;
   height: 50px;
-  background: #ec8931;
-  box-shadow: 3px 0px 150px #ec8931;
+  background: var(--secondary-color);
+  box-shadow: 3px 0px 150px var(--secondary-color);
   border-radius: 10px;
   border: none;
   span {
@@ -38,7 +38,7 @@ export const Button = styled.button`
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white);
   }
   &:hover {
     cursor: pointer;
@@ -60,7 +60,7 @@ export const DivCardsAndTitle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: var(--white);
   width: 49%;
   height: 80%;
   @media (max-width: 1200px) {
@@ -83,13 +83,13 @@ export const SectionTitle = styled.section`
   text-align: center;
   h2 {
     font-weight: 700;
-    color: #ecf1f0;
+    color: var(--new-white);
     font-size: 36px;
     margin: 0;
     padding: 0;
   }
   p {
-    color: #ecf1f0;
+    color: var(--new-white);
     font-weight: 700;
     font-size: 54px;
     margin: 0;
@@ -139,14 +139,14 @@ export const Card = styled(Paper as any)`
   .title {
     font-weight: 700;
     font-size: 48px;
-    color: #ecf1f0;
+    color: var(--new-white);
     text-align: center;
   }
   p {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
-    color: #b6b6b6;
+    color: var(--white);
   }
   @media (max-width: 592px) {
     height: 100px;

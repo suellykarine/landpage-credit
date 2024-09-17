@@ -13,11 +13,11 @@ export const FooterWrapper = styled(Paper)`
   width: 100%;
   background: linear-gradient(180deg, rgba(27, 63, 126, 0) 0%, #1b3f7e 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: #ecf1f0;
+  color: var(--new-white);
   padding-left: 0px;
   .grid {
     width: 100%;
-    color: var(--grey);
+    color: var(--gray);
     justify-content: space-between;
   }
   .column-name {
@@ -44,10 +44,16 @@ export const SocialLinksWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 60px;
+  a{
+    margin-right: 5px;
+  }
+ 
+ 
 `;
 
 export const CopyrightText = styled(Text)`
   margin-top: 16px;
+  color: var(--white);
 `;
 
 export const Column = styled.div`
@@ -56,12 +62,13 @@ export const Column = styled.div`
   width: fit-content;
   p {
     margin: 0px;
-    color: #b6b6b6;
+    color: var(--white);
     white-space: nowrap;
   }
   a {
     margin-top: 20px;
     text-decoration: none;
-    color: #b6b6b6;
+    color: var(--white);
+  
   }
 `;

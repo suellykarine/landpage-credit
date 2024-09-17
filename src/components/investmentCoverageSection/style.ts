@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const SectionContainer = styled.section`
   display: flex;
-  color: #ffffff;
+  color: var(--white);
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -37,7 +37,7 @@ export const InvestmentCoverageDiv = styled.div`
     font-weight: 400;
     line-height: normal;
 
-    color: #ffffff;
+    color: var(--white);
   }
   h2 {
     margin: 0;
@@ -60,7 +60,7 @@ export const InvestmentCoverageDiv = styled.div`
 `;
 
 export const Span = styled.span`
-  color: #ec8931;
+  color: var(--secondary-color);
 `;
 
 export const ImageDiv = styled.div`
