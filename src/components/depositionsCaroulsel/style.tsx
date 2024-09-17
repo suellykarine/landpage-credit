@@ -22,7 +22,7 @@ export const DepositionSection = styled.section`
   }
   .mantine-Carousel-indicators button {
     z-index: 1;
-    color: white;
+    color: var(--white);
     width: 55px;
     height: 8px;
     background-color: var(--white);
@@ -43,7 +43,4 @@ export const DepositionSection = styled.section`
       background-color: var(--white);
     }
   }
-  /* @media (max-width: 991px) {
-    display: none;
-  } */
 `;

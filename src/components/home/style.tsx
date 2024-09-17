@@ -36,7 +36,7 @@ export const DivText = styled.div`
     margin: 0;
     padding: 0;
   }
-  color: #ffffff;
+  color: var(--white);
   width: 700px;
   height: 400px;
   display: flex;

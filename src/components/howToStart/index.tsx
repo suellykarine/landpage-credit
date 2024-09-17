@@ -1,4 +1,3 @@
-import Footer from "../footer";
 import InviteButton from "../inviteButton";
 import {
   CardsOrTextContainer,

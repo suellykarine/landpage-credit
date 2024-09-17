@@ -1,7 +1,6 @@
 import { DivMain, DivText, ImageHome, DivImage } from "./style";
 import InviteButton from "../inviteButton";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 const SectionHome = () => {
   function scrollToDiv() {

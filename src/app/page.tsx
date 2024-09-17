@@ -1,15 +1,12 @@
 "use client";
 import { HeaderResponsive } from "@component/components/header";
 import { ContainerLandingPage, Main } from "./style";
-import InviteButton from "@component/components/inviteButton";
 import SectionHome from "@component/components/home";
 import InvestmentCoverageSection from "@component/components/investmentCoverageSection";
 import SectionProfileInvestor from "@component/components/sectionProfile";
 import HowToStartSection from "@component/components/howToStart";
 
 import SectionPerformance from "@component/components/performance";
-import { Deposition } from "@component/components/depositions";
-import { DepositionsCaroulsel } from "@component/components/depositionsCaroulsel";
 import { useEffect, useState } from "react";
 import Footer from "@component/components/footer";
 

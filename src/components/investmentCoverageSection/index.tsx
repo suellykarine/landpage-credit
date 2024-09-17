@@ -1,4 +1,3 @@
-import { Main } from "@component/app/style";
 import React from "react";
 import InviteButton from "../inviteButton";
 import {

@@ -9,8 +9,8 @@ interface ButtonProps {
 const ButtonStyled = styled.button`
   width: 287px;
   height: 50px;
-  background: #ec8931;
-  box-shadow: 3px 0px 150px #ec8931;
+  background: var(--secondary-color);
+  box-shadow: 3px 0px 150px var(--secondary-color);
   border-radius: 10px;
   border: 0;
   left: 111px;
@@ -24,7 +24,7 @@ const ButtonStyled = styled.button`
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white);
   }
 
   &:hover {
