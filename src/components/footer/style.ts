@@ -11,7 +11,7 @@ export const FooterWrapper = styled(Paper)`
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
   margin-top: auto;
   width: 100%;
-  background: linear-gradient(180deg, rgba(27, 63, 126, 0) 0%, #1b3f7e 100%);
+  background: linear-gradient(180deg, rgba(27, 63, 126, 0) 0%, var(--deposition-blue) 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--new-white);
   padding-left: 0px;

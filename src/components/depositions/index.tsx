@@ -1,13 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { SectionDeposition } from "./style";
-
-export default interface IHighlightProps {
-  by?: string;
-  paragraph?: string;
-  image?: string;
-  slice?: boolean;
-}
+import IHighlightProps from "./interface";
 
 export function Deposition({ by, paragraph, image }: IHighlightProps) {
   return (

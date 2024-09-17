@@ -6,7 +6,6 @@ import {
   TextProps,
 } from "@mantine/core";
 import styled from "@emotion/styled";
-import Image from "next/image";
 
 export const DivMain = styled.div`
   position: relative;

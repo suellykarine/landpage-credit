@@ -22,7 +22,7 @@ export const Main = styled.main`
     top: 198px;
     border-radius: 50%;
     z-index: -1;
-    background: #1b3f7e;
+    background: var(--deposition-blue);
     filter: blur(100px);
   }
 `;
@@ -61,8 +61,8 @@ export const ContainerLandingPage = styled.div`
   }
 `;
 const StyleButtonSolicitar = styled(Button)`
-  background: #ec8931;
-  box-shadow: 3px 0px 150px #ec8931;
+  background: var(--secondary-color);
+  box-shadow: 3px 0px 150px var(--secondary-color);
   border-radius: 10px;
 `;
 
